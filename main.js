@@ -60,7 +60,7 @@ function llamarcliente() {
     let nombre = prompt("Ingrese el nombre del cliente");
     let apellido = prompt("ingrese el apellido del cliente: ");
     let tel = parseInt(prompt("ingrese su telefono "));
-    let clientemodificado = new Clientes(nombre, apellido, dni, pedido);
+    let clientemodificado = new Clientes(nombre, apellido, dni);
     arrayClientes.splice(indice, 1, clientemodificado);
     console.log(arrayClientes);
 }
